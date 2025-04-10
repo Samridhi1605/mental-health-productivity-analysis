@@ -15,7 +15,17 @@ CREATE TABLE EmployeeMentalHealth (
   Productivity_Score FLOAT
 );
 
--- Example query
-SELECT Stress_Level, AVG(Productivity_Score)
-FROM EmployeeMentalHealth
+SELECT * FROM mental_health_productivity LIMIT 10;
+
+
+SELECT Stress_Level, AVG(Productivity_Score) 
+FROM mental_health_productivity
 GROUP BY Stress_Level;
+
+SELECT Sleep_Hours, AVG(Productivity_Score)
+FROM mental_health_productivity
+GROUP BY Sleep_Hours;
+
+SELECT Employee_Name, (0.5 * Sleep_Hours) + (-0.3 * Stress_Level) + (0.4 * Exercise_Frequency) + (0.6 * Work_Life_Balance) AS Predicted_Productivity
+FROM mental_health_productivity;
+
