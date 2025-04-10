@@ -21,5 +21,9 @@ This project explores the impact of mental health factors on employee productivi
 2. Open Power BI or Cognos dashboards.
 3. Refer to README and screenshots for insights.
 
+## Screenshots
+![Power BI Dashboard](visuals/PowerBI_Mental_Health_Dashboard.png)
+<!-- Cognos screenshot will be replaced once charts are fixed -->
+
 ## License
 MIT License
