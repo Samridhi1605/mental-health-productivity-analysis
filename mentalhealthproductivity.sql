@@ -3,7 +3,7 @@ CREATE DATABASE MentalHealthProductivity;
 
 USE MentalHealthProductivity;
 
-CREATE TABLE EmployeeMentalHealth (
+CREATE TABLE mental_health_productivity (
   ID INT PRIMARY KEY AUTO_INCREMENT,
   Employee_Name VARCHAR(100),
   Age INT,
@@ -15,7 +15,8 @@ CREATE TABLE EmployeeMentalHealth (
   Productivity_Score FLOAT
 );
 
-SELECT * FROM mental_health_productivity LIMIT 10;
+SELECT * 
+FROM mental_health_productivity LIMIT 10;
 
 
 SELECT Stress_Level, AVG(Productivity_Score) 
